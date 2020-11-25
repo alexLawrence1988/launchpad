@@ -1,0 +1,28 @@
+{
+  "productName": "Lead Reveal",
+  "artifactName": "LeadReveal.${ext}",
+  "appId": "com.leadforensics.reveal",
+  "copyright": "Copyright ©2019 LeadForensics",
+  "win": {
+    "target": "nsis",
+    "icon": "src/assets/lr-icon.png"
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": true,
+    "allowElevation": true,
+    "allowToChangeInstallationDirectory": true
+  },
+  "files": [
+    "*.js",
+    "dist",
+    "node_modules",
+    "src/store.js",
+    "src/services/api.js",
+    "src/services/initUser.js",
+    "src/templates/visitemail.html"
+  ],
+  "directories": {
+    "output": "build"
+  }
+}

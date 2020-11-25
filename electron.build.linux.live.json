@@ -1,0 +1,30 @@
+{
+  "productName": "Lead Reveal",
+  "artifactName": "LeadReveal.${ext}",
+  "appId": "com.leadforensics.reveal",
+  "copyright": "Copyright ©2019 LeadForensics",
+  "linux": {
+    "target": "deb",
+    "icon": "src/assets/lr-icon.png"
+  },
+  "files": [
+    "*.js",
+    "dist",
+    "node_modules",
+    "src/store.js",
+    "src/services/api.js",
+    "src/services/initUser.js",
+    "src/templates/visitemail.html"
+  ],
+  "directories": {
+    "output": "build"
+  },
+  "publish": {
+    "provider": "s3",
+    "bucket": "leadlaunchpad",
+    "path": "/linux",
+    "region": "eu-west-1",
+    "storageClass": "STANDARD",
+    "acl": "private"
+  }
+}
